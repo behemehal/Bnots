@@ -1,4 +1,4 @@
-![bnot](./assets/bnots.png)
+![bnot](./assets/Bnots.png)
 # Bnots
 
 A note app that combines simplicity with Markdown support. 
