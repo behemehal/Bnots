@@ -1,4 +1,5 @@
-<img src="./assets/Bnots.png" width="35">
+<img src="./assets/Bnots.png" width="100">
+
 # Bnots
 
 A note app that combines simplicity with Markdown support. 
