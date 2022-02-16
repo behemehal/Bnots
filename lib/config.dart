@@ -156,6 +156,8 @@ This is a block quote.
   "29": "Library licenses",
   "110": "Link tanınmadı",
   "210": "Link unrecognized",
+  "111": "Gizlilik Politikası",
+  "211": "Privacy Policy",
 };
 
 String getLanguageItem(int language, int key) {

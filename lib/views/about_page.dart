@@ -60,6 +60,33 @@ class AboutPage extends StatelessWidget {
                 getLanguageItem(1, 9),
               ),
             ),
+            TextButton(
+              onPressed: () {
+                launch(
+                    "https://github.com/behemehal/Bnots/blob/main/privacy_policy.md");
+              },
+              child: Text(
+                getLanguageItem(1, 11),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 30),
+              child: Material(
+                color: Colors.transparent,
+                shape: const CircleBorder(),
+                child: InkWell(
+                  customBorder: const CircleBorder(),
+                  onTap: () {
+                    launch("https://github.com/behemehal/Bnots");
+                  },
+                  child: const Image(
+                    image: AssetImage('assets/git.png'),
+                    width: 25,
+                    height: 25,
+                  ),
+                ),
+              ),
+            ),
             const Spacer(),
             Column(
               children: [
@@ -85,29 +112,7 @@ class AboutPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Text(
-                  "With\n\n❤️\n",
-                  style: TextStyle(fontSize: 13, color: Colors.white),
-                  textAlign: TextAlign.center,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 10),
-                  child: Material(
-                    color: Colors.transparent,
-                    shape: const CircleBorder(),
-                    child: InkWell(
-                      customBorder: const CircleBorder(),
-                      onTap: () {
-                        launch("https://github.com/behemehal/Bnots");
-                      },
-                      child: const Image(
-                        image: AssetImage('assets/git.png'),
-                        width: 25,
-                        height: 25,
-                      ),
-                    ),
-                  ),
-                ),
+                const SizedBox(height: 20),
               ],
             ),
           ],
